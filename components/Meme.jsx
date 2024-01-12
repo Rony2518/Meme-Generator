@@ -2,8 +2,8 @@ import React from "react"
 
 export default function Meme(){
     const [meme, setMeme] = React.useState({
-        topText: "No Matter",
-        bottomText: "I Will Never Give Up On Anything",
+        topText: "Hello 👋",
+        bottomText: "Make Meme and Have Fun",
         imageUrl: "http://i.imgflip.com/1bij.jpg"
     }) 
 
