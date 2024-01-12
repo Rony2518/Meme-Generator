@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-repeat: no-repeat;
+  background: linear-gradient(rgb(255, 148, 148),rgb(255, 97, 97),rgb(255, 148, 148)); 
+}
+
+nav{
+  font-family: "Rubik Doodle Shadow";
+  padding: 10px;
+  height: 70px;
+  background: linear-gradient(rgb(255, 232, 29), rgb(255, 245, 102));
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+}
+
+.meme_logo{
+  width: 70px;
+}
+
+.nav_title{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+section{
+  padding: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 17px;
+}
+
+.input_value{
+  height: 34px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.input_btn {
+  grid-column: 1 / -1;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: linear-gradient(rgb(255, 232, 29), rgb(255, 245, 102));
+  cursor: pointer;
+}
+
+.output_box{
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+}
+
+.input_label{
+  margin-bottom: 4px;
+  color: black;
+}
+
+.out_img{
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.top_text,
+.bottom_text{
+  font-family: "Rubik Doodle Shadow";
+  font-size: 30px;
+  color: white;
+}
+
+.top_text{
+  position: absolute;
+  top: 10%;
+}
+
+.bottom_text{
+  position: absolute;
+  top: 80%;
+}
+
+@media(max-width:700px) {
+  .top_text,
+  .bottom_text{
+    font-size: 20px;
+  }
+
+  .top_text{
+    top: 20%;
+  }
+  
+  .bottom_text{
+    top: 75%;
+  }
+}
+
+@media(max-width:600px) {
+  .top_text,
+  .bottom_text{
+    font-size: 15px;
+  }
+
+  .top_text{
+    top: 20%;
+  }
+  
+  .bottom_text{
+    top: 70%;
+  }
+}
